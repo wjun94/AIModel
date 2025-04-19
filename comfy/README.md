@@ -1,5 +1,5 @@
 ## Docker部署compyUI
-
+[comfy官网](https://docs.comfy.org/zh-CN)
 ### 完整部署步骤（关键配置）
 
 #### 1. 目录结构准备（与 Dockerfile 同级）
