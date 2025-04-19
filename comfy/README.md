@@ -39,6 +39,11 @@ docker run --gpus all --runtime=nvidia -d -p 8188:8188 -v ./comfyui-models:/mode
 docker exec -it comfyui bash
 ```
 
+#### 3.1. 复制单个文件到容器指定目录
+```bash
+docker cp ./comfyui_models/checkpoints/example.txt comfyui:/ComfyUI/models/checkpoints/
+```
+
 #### 4. 访问 ComfyUI 界面
 
 打开浏览器访问 `http://localhost:8188`，ComfyUI 会自动扫描 `/models/checkpoints` 目录，模型将显示在节点编辑器的模型加载选项中（如`CheckpointLoader`节点）。
