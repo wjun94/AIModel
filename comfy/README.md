@@ -31,7 +31,12 @@ docker run -d \
 ```
 
 ```bash
-docker run --gpus all --runtime=nvidia -d -p 8188:8188 -v /comfyui-models:/models --name comfyui comfyui
+docker run --gpus all --runtime=nvidia -d -p 8188:8188 -v ./comfyui-models:/models --name comfyui comfyui
+```
+
+查看容器
+```bash
+docker exec -it comfyui bash
 ```
 
 #### 4. 访问 ComfyUI 界面

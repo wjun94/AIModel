@@ -34,5 +34,7 @@ WORKDIR /ComfyUI
 RUN mkdir -p /models/checkpoints
 VOLUME /models  # 用于挂载外部模型目录
 
+COPY ./comfyui_models/checkpoints/ /ComfyUI/models/checkpoints/
+
 CMD ["python", "main.py", "--listen", "0.0.0.0", "--port", "8188"]
 
